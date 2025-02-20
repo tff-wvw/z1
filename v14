@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double R, y, x;
+            
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            R=Math.Abs(Math.Sqrt(Math.Sin(Math.Pow(2,y)+6.835)+Math.Exp(x)));
+
+            Console.WriteLine($"значение переменной R={R}");
+            Console.ReadKey();
+        }
+    }
+}
+      
