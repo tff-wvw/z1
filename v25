@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double G, y, f, e;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной f");
+            f = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной e");
+            e = Convert.ToDouble(Console.ReadLine());
+
+            G=e*Math.Pow(2,y)+Math.Sin(Math.Pow(f,2));
+
+            Console.WriteLine($"значение переменной G={G}");
+            Console.ReadKey();
+        }
+    }
+}
