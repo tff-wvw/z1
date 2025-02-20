@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double M, y, x;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            M=Math.Cos(2*y)+3.6*Math.Exp(x);
+
+            Console.WriteLine($"значение переменной M={M}");
+            Console.ReadKey();
+        }
+    }
+}
+      
