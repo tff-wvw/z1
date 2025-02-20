@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double K, p, y;
+
+            Console.WriteLine("введите значение переменной p");
+            p=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            K = Math.Log10(Math.Pow(p, 2) + Math.Pow(y, 3) + Math.Exp(p));
+
+            Console.WriteLine($"значение переменной K={K}");
+            Console.ReadKey();
+        }
+    }
+}
