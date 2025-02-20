@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double K, t, x;
+            
+            Console.WriteLine("введите значение переменной t");
+            t=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            K=7*Math.Pow(t,2)+3*Math.Sin(Math.Pow(x,3))+9.2;
+
+            Console.WriteLine($"значение переменной K={K}");
+            Console.ReadKey();
+        }
+    }
+}
