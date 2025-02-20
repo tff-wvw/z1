@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double R, t, l;
+
+            Console.WriteLine("введите значение переменной t");
+            t=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной l");
+            l=Convert.ToDouble(Console.ReadLine());
+
+            R = 3*Math.Pow(t, 2)+3*Math.Pow(l, 5)+4.9;
+
+            Console.WriteLine($"значение переменной R={R}");
+            Console.ReadKey();
+        }
+    }
+}
