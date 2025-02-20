@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double U, k, y, x;
+
+            Console.WriteLine("введите значение переменной k");
+            k=Convert.ToDouble(Console.ReadLine());
+            
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            U=Math.Exp(k+y)+Math.Tan(x)*Math.Sqrt(y);
+
+            Console.WriteLine($"значение переменной U={U}");
+            Console.ReadKey();
+        }
+    }
+}
